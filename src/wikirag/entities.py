@@ -1,0 +1,51 @@
+PEOPLE = [
+    "Albert Einstein",
+    "Marie Curie",
+    "Leonardo da Vinci",
+    "William Shakespeare",
+    "Ada Lovelace",
+    "Nikola Tesla",
+    "Lionel Messi",
+    "Cristiano Ronaldo",
+    "Taylor Swift",
+    "Frida Kahlo",
+    "Isaac Newton",
+    "Charles Darwin",
+    "Alan Turing",
+    "Mahatma Gandhi",
+    "Nelson Mandela",
+    "Cleopatra",
+    "Aristotle",
+    "Vincent van Gogh",
+    "Wolfgang Amadeus Mozart",
+    "Oprah Winfrey",
+]
+
+PLACES = [
+    "Eiffel Tower",
+    "Great Wall of China",
+    "Taj Mahal",
+    "Grand Canyon",
+    "Machu Picchu",
+    "Colosseum",
+    "Hagia Sophia",
+    "Statue of Liberty",
+    "Pyramids of Giza",
+    "Mount Everest",
+    "Acropolis of Athens",
+    "Stonehenge",
+    "Petra",
+    "Angkor Wat",
+    "Louvre Museum",
+    "Sagrada Familia",
+    "Niagara Falls",
+    "Burj Khalifa",
+    "Yellowstone National Park",
+    "Sydney Opera House",
+]
+
+ENTITY_TYPES = {
+    **{name.lower(): "person" for name in PEOPLE},
+    **{name.lower(): "place" for name in PLACES},
+}
+
